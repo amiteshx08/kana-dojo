@@ -339,10 +339,10 @@ const TrainingActionBar: React.FC<ITopBarProps> = ({
                         'border-b-10',
                         'hover:cursor-pointer',
                         colorScheme === 'secondary' &&
-                          'bg-(--secondary-color)/90 text-(--background-color)',
+                          'border-(--secondary-color-accent) bg-(--secondary-color)/90 text-(--background-color)',
                         colorScheme === 'primary' &&
                           (isFilled
-                            ? 'bg-(--main-color) text-(--background-color)'
+                            ? 'border-(--main-color-accent) bg-(--main-color) text-(--background-color)'
                             : 'cursor-not-allowed bg-(--card-color) text-(--border-color)'),
                       )}
                       onClick={e => {
